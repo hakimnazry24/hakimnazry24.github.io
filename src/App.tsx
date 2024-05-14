@@ -207,20 +207,26 @@ export default function App() {
               </p>
             </div>
             <div className="flex flex-col items-center gap-2 mb-5 md:lg:mb-0">
-              <FaGithub style={{ fontSize: "5rem" }} />
-              <p>
-                <a href="www.github.com/hakimnazry24">
-                  github.com/hakimnazry24
-                </a>
-              </p>
+              <a href="www.github.com/hakimnazry24" >
+                <FaGithub style={{ fontSize: "5rem" }} className="inline-block" />
+                <p>
+                
+                    github.com/hakimnazry24
+                
+                </p>
+              </a>
             </div>
             <div className="flex flex-col items-center gap-2 mb-5 md:lg:mb-0">
-              <BsTwitterX style={{ fontSize: "5rem" }} />
-              <p>@hakimnazry__</p>
+              <a href="https://twitter.com/hakimnazry_">
+                <BsTwitterX style={{ fontSize: "5rem" }} className="inline-block"/>
+                <p>@hakimnazry_</p>
+              </a>
             </div>
             <div className="flex flex-col items-center gap-2 mb-5 md:lg:mb-0">
-              <FaLinkedin style={{ fontSize: "5rem" }} />
-              <p>www.linkedin.com/in/hakim-nazri/</p>
+              <a href="www.linkedin.com/in/hakim-nazri/">
+                <FaLinkedin style={{ fontSize: "5rem" }} className="inline-block"/>
+                <p>www.linkedin.com/in/hakim-nazri/</p>
+              </a>
             </div>
           </div>
         </div>
