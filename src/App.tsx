@@ -164,7 +164,7 @@ export default function App() {
       </div>
 
       {/* projects */}
-      <div className="flex justify-center mb:lg:h-screen pt-10" id="projects">
+      <div className="flex justify-center md:lg:h-screen pt-10" id="projects">
         <div>
           <motion.h1
             className="text-center text-5xl font-semibold mb-5"
