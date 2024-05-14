@@ -41,7 +41,9 @@ export default function App() {
             />
           </div>
           <div>
-            <h1 className="text-5xl font-semibold text-center md:lg:text-left">Hello</h1>
+            <h1 className="text-5xl font-semibold text-center md:lg:text-left">
+              Hello
+            </h1>
             <h2 className="text-2xl mb-10 text-center md:lg:text-left">
               My name is{" "}
               <span className="bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 bg-clip-text text-transparent inline-block font-semibold">
@@ -128,7 +130,7 @@ export default function App() {
             even the Malaysian tradisional music instrument, the Gamelan. Reach
             me out and let's connect :D
           </motion.p>
-          <div className="flex flex-col md:lg:flex-row justify-center gap-20 mt-10" >
+          <div className="flex flex-col md:lg:flex-row justify-center gap-20 mt-10">
             <motion.img
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -147,7 +149,7 @@ export default function App() {
               src="/image1.JPG"
               alt=""
               style={{ width: "15rem" }}
-              className="rounded-2xl self-start mb-5 md:lg:mb-0 hidden md:lg:block" 
+              className="rounded-2xl self-start mb-5 md:lg:mb-0 hidden md:lg:block"
             />
             <motion.img
               initial={{ opacity: 0 }}
@@ -164,8 +166,8 @@ export default function App() {
       </div>
 
       {/* projects */}
-      <div className="flex justify-center md:lg:h-screen pt-10" id="projects">
-        <div>
+      <div className="flex justify-center  pt-10" id="projects">
+        <div className="">
           <motion.h1
             className="text-center text-5xl font-semibold mb-5"
             initial={{ opacity: 0 }}
@@ -177,19 +179,28 @@ export default function App() {
           </motion.h1>
           <div className="md:lg:grid grid-cols-3 gap-10">
             <Card
+              github="https://github.com/Motion-U/motionu-official-website"
               link="/project1.png"
               title="Motion-U Technopreneurship Club Official Website"
               desc="Motion-U Club is a technopreneurship club based in International Islamic University Malaysia. I created the website using NextJs, Tailwind and Contentful Headless CMS."
             ></Card>
             <Card
+              github="https://github.com/hakimnazry24/KICT-Order-Food"
               link="/project2.png"
               title="KICT Online Food Order"
               desc="KICT Online Food Order is an food ordering system that is meant for community at Kulliyyah of Information and Communication Technology (KICT) IIUM. This project is built using React, NodeJS, SQLite, and Tailwind"
             ></Card>
             <Card
+              github="https://github.com/hakimnazry24/Motion-U-Program-Management-System"
               link="/project3.png"
               title="Motion-U Program Management System"
               desc="Motion-U Program Management System is a system that helps Motion-U mainboards to manage club's program. It is built using React, NodeJS, SQLite and Tailwind"
+            ></Card>
+            <Card
+              github="https://github.com/hakimnazry24/Venue-Reservation-System"
+              link="/project4.png"
+              title="Venue Reservation System"
+              desc="This project is part of my assignment for Mobile Application Development course. It is built using HTML, Tailwind, and Dart"
             ></Card>
           </div>
         </div>
@@ -202,29 +213,32 @@ export default function App() {
           <div className="md:lg:grid grid-cols-4 gap-5">
             <div className="flex flex-col items-center gap-2 mb-5 md:lg:mb-0">
               <TfiEmail style={{ fontSize: "5rem" }} />
-              <p>
-                hakimnazry@gmail.com
-              </p>
+              <p>hakimnazry@gmail.com</p>
             </div>
             <div className="flex flex-col items-center gap-2 mb-5 md:lg:mb-0">
-              <a href="www.github.com/hakimnazry24" >
-                <FaGithub style={{ fontSize: "5rem" }} className="inline-block" />
-                <p>
-                
-                    github.com/hakimnazry24
-                
-                </p>
+              <a href="www.github.com/hakimnazry24">
+                <FaGithub
+                  style={{ fontSize: "5rem" }}
+                  className="inline-block"
+                />
+                <p>github.com/hakimnazry24</p>
               </a>
             </div>
             <div className="flex flex-col items-center gap-2 mb-5 md:lg:mb-0">
               <a href="https://twitter.com/hakimnazry_">
-                <BsTwitterX style={{ fontSize: "5rem" }} className="inline-block"/>
+                <BsTwitterX
+                  style={{ fontSize: "5rem" }}
+                  className="inline-block"
+                />
                 <p>@hakimnazry_</p>
               </a>
             </div>
             <div className="flex flex-col items-center gap-2 mb-5 md:lg:mb-0">
               <a href="www.linkedin.com/in/hakim-nazri/">
-                <FaLinkedin style={{ fontSize: "5rem" }} className="inline-block"/>
+                <FaLinkedin
+                  style={{ fontSize: "5rem" }}
+                  className="inline-block"
+                />
                 <p>www.linkedin.com/in/hakim-nazri/</p>
               </a>
             </div>
