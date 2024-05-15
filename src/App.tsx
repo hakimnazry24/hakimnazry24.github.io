@@ -202,6 +202,12 @@ export default function App() {
               title="Venue Reservation System"
               desc="This project is part of my assignment for Mobile Application Development course. It is built using HTML, Tailwind, and Dart"
             ></Card>
+            <Card
+              github="https://github.com/hakimnazry24/hakimnazry24.github.io"
+              link="/project5.png"
+              title="Personal Website"
+              desc="This is my personal website for showcasing biodata and projects. It is built using ReactJS and Tailwind"
+            ></Card>
           </div>
         </div>
       </div>
