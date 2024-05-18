@@ -208,6 +208,12 @@ export default function App() {
               title="Personal Website"
               desc="This is my personal website for showcasing biodata and projects. It is built using ReactJS and Tailwind"
             ></Card>
+            <Card
+              github="https://github.com/hakimnazry24/Abu-Hurairah-Stray-Cats-Reporting-System.git"
+              link="/project6.png"
+              title="Abu Hurairah Club Stray Cats Reporting System"
+              desc="Stray Cats Reporting System is a system that allows IIUM community to report stray cats around IIUM. It eases Abu Hurairah Club to locate any stray cats around IIUM. Built using ReactJS, NodeJS, Tailwind, and SQLite"
+            ></Card>
           </div>
         </div>
       </div>
