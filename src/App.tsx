@@ -214,6 +214,12 @@ export default function App() {
               title="Abu Hurairah Club Stray Cats Reporting System"
               desc="Stray Cats Reporting System is a system that allows IIUM community to report stray cats around IIUM. It eases Abu Hurairah Club to locate any stray cats around IIUM. Built using ReactJS, NodeJS, Tailwind, and SQLite"
             ></Card>
+            <Card
+              github="https://caringclubiium.vercel.app/"
+              link="/project7.png"
+              title="Caring Club IIUM Official Website"
+              desc="Caring Club IIUM is a club that focuses on orphan's wellbeing. Caring Club is part of CENSERVE club located at Internation Islamic University Malaysia. The website is build using NextJS and Contentful CMS"
+            ></Card>
           </div>
         </div>
       </div>
