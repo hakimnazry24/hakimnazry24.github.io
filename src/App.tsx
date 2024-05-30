@@ -218,7 +218,7 @@ export default function App() {
               github="https://caringclubiium.vercel.app/"
               link="/project7.png"
               title="Caring Club IIUM Official Website"
-              desc="Caring Club IIUM is a club that focuses on orphan's wellbeing. Caring Club is part of CENSERVE club located at Internation Islamic University Malaysia. The website is build using NextJS and Contentful CMS"
+              desc="Caring Club IIUM is a club that focuses on orphan's wellbeing. Caring Club is part of CENSERVE club located at International Islamic University Malaysia. The website is build using NextJS and Contentful CMS"
             ></Card>
           </div>
         </div>
