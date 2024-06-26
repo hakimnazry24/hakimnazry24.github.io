@@ -220,6 +220,12 @@ export default function App() {
               title="Caring Club IIUM Official Website"
               desc="Caring Club IIUM is a club that focuses on orphan's wellbeing. Caring Club is part of CENSERVE club located at Internation Islamic University Malaysia. The website is build using NextJS and Contentful CMS"
             ></Card>
+            <Card
+              github="https://github.com/hakimnazry24/Fiverr-Clone-"
+              link="/project8.png"
+              title="Fiverr Clone: Freelancing Platform for Students"
+              desc="The Fiverr app is a widely-used platform that connects freelancers with clients seeking various services, from graphic design and digital marketing to writing and programming. Built using Flutter and Firebase"
+            ></Card>
           </div>
         </div>
       </div>
