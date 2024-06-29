@@ -95,6 +95,14 @@ export default function App() {
                 Prisma ORM
               </li>
               <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
+                Dart
+              </li><li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
+                Flutter
+              </li>
+              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
+                Firebase
+              </li>
+              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
                 and a certified yapper :D
               </li>
             </ul>
