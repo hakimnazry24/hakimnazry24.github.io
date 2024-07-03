@@ -231,7 +231,7 @@ export default function App() {
             <Card
               github="https://github.com/hakimnazry24/Fiverr-Clone-"
               link="/project8.png"
-              title="Fiverr Clone: Freelancing Platform for Students"
+              title="IIUM Freelancer: Freelancing Platform for Students"
               desc="The Fiverr app is a widely-used platform that connects freelancers with clients seeking various services, from graphic design and digital marketing to writing and programming. Built using Flutter and Firebase"
             ></Card>
           </div>
