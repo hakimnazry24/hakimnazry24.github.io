@@ -11,7 +11,7 @@ const router = createBrowserRouter([
     element: <App></App>,
   },
   {
-    path: "/iium-freelancer",
+    path: "iium-freelancer",
     element: <LandingPageIIUMFreelancer></LandingPageIIUMFreelancer>,
   },
 ]);
