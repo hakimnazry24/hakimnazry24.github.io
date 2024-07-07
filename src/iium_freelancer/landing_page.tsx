@@ -35,9 +35,9 @@ export default function LandingPageIIUMFreelancer() {
           </button>
         </div>
         <div>
-          <img src="/phone.png" alt="" className="animate-fade-left"/>
+          <img src="/phone.png" alt="" className="animate-fade-left" />
         </div>
-      </section>    
+      </section>
     </>
   );
 }
