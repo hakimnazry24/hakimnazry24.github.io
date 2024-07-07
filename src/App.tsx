@@ -5,6 +5,7 @@ import { BsTwitterX } from "react-icons/bs";
 import { TfiEmail } from "react-icons/tfi";
 
 export default function App() {
+  
   return (
     <>
       <header className="flex items-center justify-between text-lg font-semibold p-5 bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 text-white">
@@ -23,6 +24,9 @@ export default function App() {
             </li>
             <li className="transition ease-in-out duration-150 p-3 hover:bg-white hover:text-black rounded-2xl">
               <a href="#contact">Contact</a>
+            </li>
+            <li className="transition ease-in-out duration-150 p-3 hover:bg-white hover:text-black rounded-2xl">
+              <a href="#contact">IIUM Freelancer</a>
             </li>
           </ul>
         </div>
