@@ -99,6 +99,14 @@ export default function App() {
                 Prisma ORM
               </li>
               <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
+                Dart
+              </li><li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
+                Flutter
+              </li>
+              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
+                Firebase
+              </li>
+              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
                 and a certified yapper :D
               </li>
             </ul>
@@ -223,6 +231,12 @@ export default function App() {
               link="/project7.png"
               title="Caring Club IIUM Official Website"
               desc="Caring Club IIUM is a club that focuses on orphan's wellbeing. Caring Club is part of CENSERVE club located at International Islamic University Malaysia. The website is build using NextJS and Contentful CMS"
+            ></Card>
+            <Card
+              github="https://github.com/hakimnazry24/Fiverr-Clone-"
+              link="/project8.png"
+              title="IIUM Freelancer: Freelancing Platform for Students"
+              desc="The Fiverr app is a widely-used platform that connects freelancers with clients seeking various services, from graphic design and digital marketing to writing and programming. Built using Flutter and Firebase"
             ></Card>
           </div>
         </div>
