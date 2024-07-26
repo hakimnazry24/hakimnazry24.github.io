@@ -25,7 +25,7 @@ export default function App() {
             <li className="transition ease-in-out duration-150 p-3 hover:bg-white hover:text-black rounded-2xl">
               <a href="#contact">Contact</a>
             </li>
-            
+            {/*  */}
           </ul>
         </div>
       </header>
