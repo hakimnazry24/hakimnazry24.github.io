@@ -5,7 +5,6 @@ import { BsTwitterX } from "react-icons/bs";
 import { TfiEmail } from "react-icons/tfi";
 
 export default function App() {
-  
   return (
     <>
       <header className="flex items-center justify-between text-lg font-semibold p-5 bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 text-white">
@@ -98,7 +97,8 @@ export default function App() {
               </li>
               <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
                 Dart
-              </li><li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
+              </li>
+              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
                 Flutter
               </li>
               <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
@@ -235,6 +235,30 @@ export default function App() {
               link="/project8.png"
               title="IIUM Freelancer: Freelancing Platform for Students"
               desc="The Fiverr app is a widely-used platform that connects freelancers with clients seeking various services, from graphic design and digital marketing to writing and programming. Built using Flutter and Firebase"
+            ></Card>
+            <Card
+              github="https://bilalkict.vercel.app"
+              link="/project9.png"
+              title="Portfolio Website for My Friend"
+              desc="I built portfolio website to help my friend land a job. Built using NextJS, Tailwind, Material Tailwind, and Framer Motion"
+            ></Card>
+            <Card
+              github=""
+              link="/project10.png"
+              title="Portfolio Website for Tuan Yusry"
+              desc="I built portfolio website for Tuan Yusry, the Co-Founder of Startlah Innovation PLT. It has features his biodata, e-books, and blogposts. Built using NextJS, Tailwind, Material Tailwind, Framer Motion and Contentful CMS"
+            ></Card>
+            <Card
+              github=""
+              link="/project11.png"
+              title="Learning Management System for Startlah Innovation PLT"
+              desc="I built Learning Management System for the company using Moodle LMS and hosted at Digital Ocean"
+            ></Card>
+            <Card
+              github=""
+              link="/project12.png"
+              title="Board Game Stock Management System"
+              desc="I built a mobile app that can be used to manage board games stocks at my intern company. Build Using Dart, Flutter and Firebase Firestore"
             ></Card>
           </div>
         </div>
