@@ -1,120 +1,75 @@
 import { motion } from "framer-motion";
-import Card from "./components/card";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { TfiEmail } from "react-icons/tfi";
+import Card from "./components/Card";
 
 export default function App() {
   return (
     <>
-      <header className="flex items-center justify-between text-lg font-semibold p-5 bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 text-white">
-        <a href="/">
-          <h1 className="transition ease-in-out duration-150 p-3 hover:bg-white hover:text-black rounded-2xl">
-            Hakim Nazri
-          </h1>
+      <header className="hidden md:flex justify-between text-xl font-semibold p-3 fixed w-full top-0 left-0 bg-white">
+        <a href="">
+          <div>Hakim Nazri</div>
         </a>
-        <div>
-          <ul className="flex gap-5">
-            <li className="transition ease-in-out duration-150 p-3 hover:bg-white hover:text-black rounded-2xl">
-              <a href="#projects">Projects</a>
-            </li>
-            <li className="transition ease-in-out duration-150 p-3 hover:bg-white hover:text-black rounded-2xl">
-              <a href="#about">About</a>
-            </li>
-            <li className="transition ease-in-out duration-150 p-3 hover:bg-white hover:text-black rounded-2xl">
-              <a href="#contact">Contact</a>
-            </li>
+        <div className="flex space-x-5">
+          <ul>
+            <a href="#about" className="hover:underline">
+              <li>About</li>
+            </a>
           </ul>
+          <ul>
+            <a href="#experience" className="hover:underline">
+              <li>Experience</li>
+            </a>
+          </ul>
+          <ul>
+            <a href="#past-projects" className="hover:underline">
+              <li>Past Projects</li>
+            </a>
+          </ul>
+          <ul>
+            <a href="#cv" className="hover:underline">
+              <li>Curriculum Vitae</li>
+            </a>
+          </ul>
+          <ul>
+            <a href="#contact" className="hover:underline">
+              <li>Contact</li>
+            </a>
+          </ul>
+          {/* <ul>
+            <a href="#blog" className="hover:underline">
+              <li>Blog</li>
+            </a>
+          </ul> */}
         </div>
       </header>
-      <div
-        className="flex justify-center items-center mb-16"
-        style={{ height: "80vh" }}
-      >
-        <div className="md:lg:grid grid-cols-2 gap-3 items-center ">
-          <div className="justify-self-center">
-            <img
-              src="/patapata.gif"
-              alt=""
-              style={{ height: "20rem" }}
-              className="rounded-2xl hidden md:lg:block"
-            />
-          </div>
-          <div>
-            <h1 className="text-5xl font-semibold text-center md:lg:text-left">
-              Hello
-            </h1>
-            <h2 className="text-2xl mb-10 text-center md:lg:text-left">
-              My name is{" "}
-              <span className="bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 bg-clip-text text-transparent inline-block font-semibold">
-                Hakim
-              </span>
-            </h2>
-            <h3 className="mx-5 md:lg:mx-0 mb-2">I have experience using</h3>
-            <ul className="flex gap-3 flex-wrap mx-5 md:lg:mx-0">
-              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
-                HTML
-              </li>
-              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
-                CSS
-              </li>
-              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
-                Javascript
-              </li>
-              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
-                Typescript
-              </li>
-              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
-                ReactJS
-              </li>
-              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
-                NodeJS
-              </li>
-              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
-                NextJS
-              </li>
-              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
-                Flutter
-              </li>
-              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
-                Tailwind
-              </li>
-              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
-                DaisyUI
-              </li>
-              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
-                Contentful CMS
-              </li>
-              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
-                SQLite
-              </li>
-              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
-                MongoDB
-              </li>
-              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
-                Prisma ORM
-              </li>
-              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
-                Dart
-              </li><li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
-                Flutter
-              </li>
-              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
-                Firebase
-              </li>
-              <li className="p-3 rounded-2xl text-white bg-gradient-to-r from-green-500 via-violet-600 to-blue-400 font-semibold transition ease-in-out hover:-translate-y-2 hover:translate-x-1">
-                and a certified yapper :D
-              </li>
-            </ul>
-          </div>
+
+      <section className="md:grid grid-cols-2 lg:gap-x-32 items-center mt-16 md:mt-5 h-screen w-2/3 mx-auto">
+        <div className="flex justify-center md:justify-end mb-10 md:mb-0">
+          <img src="/hakim.jpeg" alt="" className="w-4/5 mb:2-3/5 rounded-lg" />
         </div>
-      </div>
+        <div className="text-lg justify-self-start">
+          Hello 👋
+          <br />
+          <h1 className="text-xl font-semibold">I am Muhammad Hakim</h1>
+          <h2 className="mt-5 text-xl">
+            Web Application Freelancer | Mobile Application Freelancer |
+            Computer Science Student
+          </h2>
+          <a href="https://www.linkedin.com/in/hakim-nazri/">
+            <button className="border border-black p-2 px-4 rounded-md flex gap-x-2 items-center transition-all hover:text-white hover:font-semibold hover:bg-black mt-5">
+              Let&apos;s connect!
+            </button>
+          </a>
+        </div>
+      </section>
 
       {/* about */}
       <div className="flex justify-center items-center my-10 pt-20" id="about">
         <div className="mx-16 text-center " style={{ height: "100vh" }}>
           <motion.h1
-            className="text-5xl font-semibold mb-5"
+            className="text-2xl font-semibold mb-5"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
@@ -173,70 +128,111 @@ export default function App() {
         </div>
       </div>
 
-      {/* projects */}
-      <div className="flex justify-center  pt-10" id="projects">
-        <div className="">
-          <motion.h1
-            className="text-center text-5xl font-semibold mb-5"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
-            Projects
-          </motion.h1>
-          <div className="md:lg:grid grid-cols-3 gap-10">
-            <Card
-              github="https://github.com/Motion-U/motionu-official-website"
-              link="/project1.png"
-              title="Motion-U Technopreneurship Club Official Website"
-              desc="Motion-U Club is a technopreneurship club based in International Islamic University Malaysia. I created the website using NextJs, Tailwind and Contentful Headless CMS."
-            ></Card>
-            <Card
-              github="https://github.com/hakimnazry24/KICT-Order-Food"
-              link="/project2.png"
-              title="KICT Online Food Order"
-              desc="KICT Online Food Order is an food ordering system that is meant for community at Kulliyyah of Information and Communication Technology (KICT) IIUM. This project is built using React, NodeJS, SQLite, and Tailwind"
-            ></Card>
-            <Card
-              github="https://github.com/hakimnazry24/Motion-U-Program-Management-System"
-              link="/project3.png"
-              title="Motion-U Program Management System"
-              desc="Motion-U Program Management System is a system that helps Motion-U mainboards to manage club's program. It is built using React, NodeJS, SQLite and Tailwind"
-            ></Card>
-            <Card
-              github="https://github.com/hakimnazry24/Venue-Reservation-System"
-              link="/project4.png"
-              title="Venue Reservation System"
-              desc="This project is part of my assignment for Mobile Application Development course. It is built using HTML, Tailwind, and Dart"
-            ></Card>
-            <Card
-              github="https://github.com/hakimnazry24/hakimnazry24.github.io"
-              link="/project5.png"
-              title="Personal Website"
-              desc="This is my personal website for showcasing biodata and projects. It is built using ReactJS and Tailwind"
-            ></Card>
-            <Card
-              github="https://github.com/hakimnazry24/Abu-Hurairah-Stray-Cats-Reporting-System.git"
-              link="/project6.png"
-              title="Abu Hurairah Club Stray Cats Reporting System"
-              desc="Stray Cats Reporting System is a system that allows IIUM community to report stray cats around IIUM. It eases Abu Hurairah Club to locate any stray cats around IIUM. Built using ReactJS, NodeJS, Tailwind, and SQLite"
-            ></Card>
-            <Card
-              github="https://caringclubiium.vercel.app/"
-              link="/project7.png"
-              title="Caring Club IIUM Official Website"
-              desc="Caring Club IIUM is a club that focuses on orphan's wellbeing. Caring Club is part of CENSERVE club located at Internation Islamic University Malaysia. The website is build using NextJS and Contentful CMS"
-            ></Card>
-            <Card
-              github="https://github.com/hakimnazry24/Fiverr-Clone-"
-              link="/project8.png"
-              title="IIUM Freelancer: Freelancing Platform for Students"
-              desc="The Fiverr app is a widely-used platform that connects freelancers with clients seeking various services, from graphic design and digital marketing to writing and programming. Built using Flutter and Firebase"
-            ></Card>
+      <section className="my-20 mx-5 md:mx-0" id="experience">
+        <h1 className="text-center text-2xl font-semibold mb-5">Experiences</h1>
+        <div className="lg:w-3/5 mx-auto flex flex-col gap-y-14">
+          <div className="flex justify-between items-center">
+            <div>
+              <h2 className="text-xl font-semibold">Programming Tutor</h2>
+              <h3 className="text-lg">
+                International Islamic University Malaysia
+              </h3>
+              <p className="lg:w-2/3 mt-5">
+                Responsible for preparing modules and training for Element of
+                Programming students for first year Computer Science students
+              </p>
+            </div>
+            <h4 className="hidden md:block">November 2024 - Current</h4>
+          </div>
+
+          <div className="flex justify-between items-center">
+            <div>
+              <h2 className="text-xl font-semibold">Freelancer</h2>
+              <h3 className="text-lg">QuantumLeap Technologies</h3>
+              <p className="lg:w-2/3 mt-5">
+                Building web application for various clients to meet their
+                business requirements
+              </p>
+            </div>
+            <h4 className="hidden md:block">July 2024 - Current</h4>
+          </div>
+
+          <div className="flex justify-between items-center">
+            <div>
+              <h2 className="text-xl font-semibold">Computer Science Intern</h2>
+              <h3 className="text-lg">Startlah Innovation PLT</h3>
+              <p className="lg:w-2/3 mt-5">
+                Building web application to manage company customer relationship
+              </p>
+            </div>
+            <h4 className="hidden md:block">July 2024 - Current</h4>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section id="past-projects" className="my-20">
+        <motion.h1
+          className="text-center text-2xl font-semibold mb-1"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          Past Projects
+        </motion.h1>
+
+        <div className="flex flex-col md:grid grid-cols-3 gap-10 w-2/3 mx-auto justify-items-center mt-10">
+          <Card
+            projectTitle="IGIIDeation Innovation Competition Administration & Judging System"
+            description="Administration and judging system for IGIIDeation Innovation Competition that was held on 8 February 2025."
+            projectLink="https://judgevaganza.silverseedslab.com/"
+            imageLink="/project1.png"
+          />
+          <Card
+            projectTitle="Portfolio Website for Bilal"
+            description="Portfolio website to showcase self-introduction and skills. My first freelancing client."
+            projectLink="https://bilalkict.vercel.app/"
+            imageLink="/project2.png"
+          />
+          <Card
+            projectTitle="MotionU Official Website"
+            description="The official website for MotionU entrepreneurship club. Integrate with Contentful CMS for blog"
+            projectLink="https://motionu.club/"
+            imageLink="/project3.png"
+          />{" "}
+          <Card
+            projectTitle="Portfolio Website for Tuan Yusry"
+            description="Portfolio website for Tuan Yusry. the Co-Founder of Startlah Innovation PLT"
+            projectLink="https://yusryyusopp.com/"
+            imageLink="/project4.png"
+          />
+          <Card
+            projectTitle="Official Research Management Centre IIUM Website"
+            description="Official Research Management Centre (RMC) IIUM website built on Wordpress"
+            projectLink="https://yusryyusopp.com/"
+            imageLink="/project5.png"
+          />
+        </div>
+      </section>
+
+      <section className="my-10" id="cv">
+        <h1 className="text-center text-2xl font-semibold mb-10">
+          My Curriculum Vitae
+        </h1>
+        <div className="flex justify-center">
+          <a
+            href="https://docs.google.com/document/d/15nPIdC54qiW93hx-s2XMFt39EBuN4C9P0L_LhZIMskg/export?format=pdf"
+            download
+            className="underline active:text-blue-700"
+          >
+            Download Here
+          </a>
+        </div>
+        <iframe
+          src="https://docs.google.com/document/d/15nPIdC54qiW93hx-s2XMFt39EBuN4C9P0L_LhZIMskg/preview"
+          className="w-full md:w-2/3 mx-auto h-screen"
+        ></iframe>
+      </section>
 
       {/* contact */}
       <div className="flex justify-center py-10 text-center" id="contact">
