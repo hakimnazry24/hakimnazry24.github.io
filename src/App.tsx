@@ -5,11 +5,23 @@ import { TfiEmail } from "react-icons/tfi";
 import Card from "./components/Card";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 
 export default function App() {
   const [displayDropdownMenu, setDisplayDropdownMenu] = useState(false);
   return (
     <>
+      <Helmet>
+        <title>Hakim Nazri Portfolio</title>
+        <meta
+          name="description"
+          content="Muhammad Hakim Bin Md Nazri is a web application freelancer and a computer science students at International Islamic University Malaysia. He builds solutions for many different clients for their businesses using the latest technology"
+        />
+        <meta
+          name="keywords"
+          content="web application, mobile application, web application freelancer, mobile application freelancer, computer science student, Internation Islamic University Malaysia, IT solution, portfolio, Hakim Nazri, Muhammad Hakim Bin Md Nazri, final year project, fyp, hakim computer science iium, hakim web freelancer"
+        />
+      </Helmet>
       <div className="bg-white p-4 fixed left-0 top-0 w-full block md:hidden">
         <button className=" p-2 border rounded-md ">
           <RxHamburgerMenu
