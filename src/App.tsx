@@ -3,12 +3,83 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { TfiEmail } from "react-icons/tfi";
 import Card from "./components/Card";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { useState } from "react";
 
 export default function App() {
+  const [displayDropdownMenu, setDisplayDropdownMenu] = useState(false);
   return (
     <>
-      <header className="hidden md:flex justify-between text-xl font-semibold p-3 fixed w-full top-0 left-0 bg-white">
-        <a href="">
+      <div className="bg-white p-4 fixed left-0 top-0 w-full block md:hidden">
+        <button className=" p-2 border rounded-md ">
+          <RxHamburgerMenu
+            onClick={() => setDisplayDropdownMenu(!displayDropdownMenu)}
+          />
+        </button>
+      </div>
+      <header
+        className={`p-6 fixed top-0 left-0 w-full h-screen bg-white ${
+          displayDropdownMenu ? "block" : "hidden"
+        }`}
+      >
+        <button className=" p-2 border rounded-md block md:hidden">
+          <RxHamburgerMenu
+            onClick={() => setDisplayDropdownMenu(!displayDropdownMenu)}
+          />
+        </button>
+        <div className="flex flex-col space-x-5">
+          <ul>
+            <li className="border-b-2 p-2">
+              <a
+                href="#about"
+                className="hover:underline"
+                onClick={() => setDisplayDropdownMenu(false)}
+              >
+                <li>About</li>
+              </a>
+            </li>
+            <li
+              className="border-b-2 p-2"
+              onClick={() => setDisplayDropdownMenu(false)}
+            >
+              <a href="#experience" className="hover:underline">
+                <li>Experience</li>
+              </a>
+            </li>
+            <li
+              className="border-b-2 p-2"
+              onClick={() => setDisplayDropdownMenu(false)}
+            >
+              <a href="#past-projects" className="hover:underline">
+                <li>Past Projects</li>
+              </a>
+            </li>
+            <li
+              className="border-b-2 p-2"
+              onClick={() => setDisplayDropdownMenu(false)}
+            >
+              <a href="#cv" className="hover:underline">
+                <li>Curriculum Vitae</li>
+              </a>
+            </li>
+            <li
+              className="border-b-2 p-2"
+              onClick={() => setDisplayDropdownMenu(false)}
+            >
+              <a href="#contact" className="hover:underline">
+                <li>Contact</li>
+              </a>
+            </li>
+          </ul>
+          {/* <ul>
+            <a href="#blog" className="hover:underline">
+              <li>Blog</li>
+            </a>
+          </ul> */}
+        </div>
+      </header>
+      <header className="hidden md:flex justify-between p-6">
+        <a href="/" className="text-xl font-semibold">
           <div>Hakim Nazri</div>
         </a>
         <div className="flex space-x-5">
@@ -45,7 +116,7 @@ export default function App() {
         </div>
       </header>
 
-      <section className="md:grid grid-cols-2 lg:gap-x-32 items-center mt-16 md:mt-5 h-screen w-2/3 mx-auto">
+      <section className="md:grid grid-cols-2 lg:gap-x-32 items-center mt-28 md:mt-5 h-screen w-2/3 mx-auto">
         <div className="flex justify-center md:justify-end mb-10 md:mb-0">
           <img src="/hakim.jpeg" alt="" className="w-4/5 mb:2-3/5 rounded-lg" />
         </div>
