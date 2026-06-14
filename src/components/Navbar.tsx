@@ -1,4 +1,5 @@
 import { RxHamburgerMenu } from "react-icons/rx";
+import { IoClose } from "react-icons/io5";
 
 interface NavbarProps {
   displayDropdownMenu: boolean;
@@ -7,8 +8,6 @@ interface NavbarProps {
 
 const NAV_ITEMS = [
   { href: "#about", label: "About" },
-//   { href: "#experience", label: "Experience" },
-//   { href: "#past-projects", label: "Past Projects" },
   { href: "#cv", label: "Curriculum Vitae" },
   { href: "#contact", label: "Contact" },
 ];
@@ -19,57 +18,80 @@ export default function Navbar({
 }: NavbarProps) {
   return (
     <>
-      {/* Mobile hamburger toggle */}
-      <div className="bg-white p-4 fixed left-0 top-0 w-full block md:hidden z-10">
-        <button className="p-2 border rounded-md">
-          <RxHamburgerMenu
+      {/* Mobile menu toggle button */}
+      <div className="fixed left-0 top-0 w-full z-20 md:hidden">
+        <div className="flex justify-between items-center bg-cream border-b-4 border-navy px-4 py-3">
+          <a href="/" className="text-xl font-display font-bold text-navy">
+            Hakim Nazri
+          </a>
+          <button
+            className="p-2 border-4 border-navy rounded-[4px] bg-white"
             onClick={() => setDisplayDropdownMenu(!displayDropdownMenu)}
-          />
-        </button>
+            aria-label="Toggle menu"
+          >
+            {displayDropdownMenu ? (
+              <IoClose size={24} />
+            ) : (
+              <RxHamburgerMenu size={24} />
+            )}
+          </button>
+        </div>
       </div>
 
-      {/* Mobile dropdown menu */}
+      {/* Mobile fullscreen menu */}
       <header
-        className={`p-6 fixed top-0 left-0 w-full h-screen bg-white z-10 ${
-          displayDropdownMenu ? "block" : "hidden"
+        className={`fixed top-0 left-0 w-full h-screen bg-terracotta z-10 border-r-4 border-navy transition-transform duration-300 ease-in-out md:hidden ${
+          displayDropdownMenu ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <button className="p-2 border rounded-md block md:hidden">
-          <RxHamburgerMenu
-            onClick={() => setDisplayDropdownMenu(!displayDropdownMenu)}
-          />
-        </button>
-        <div className="flex flex-col space-x-5">
-          <ul>
+        <div className="flex justify-end p-4">
+          <button
+            className="p-2 border-4 border-navy rounded-[4px] bg-white"
+            onClick={() => setDisplayDropdownMenu(false)}
+            aria-label="Close menu"
+          >
+            <IoClose size={24} />
+          </button>
+        </div>
+        <nav className="flex flex-col items-center justify-center h-full -mt-16">
+          <ul className="space-y-8 text-center">
             {NAV_ITEMS.map(({ href, label }) => (
-              <li
-                key={href}
-                className="border-b-2 p-2"
-                onClick={() => setDisplayDropdownMenu(false)}
-              >
-                <a href={href} className="hover:underline">
+              <li key={href}>
+                <a
+                  href={href}
+                  onClick={() => setDisplayDropdownMenu(false)}
+                  className="text-4xl font-display font-bold text-white border-4 border-navy bg-navy px-8 py-4 inline-block rounded-[4px] shadow-brutal-sm hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-brutal transition-all duration-200 ease-out"
+                >
                   {label}
                 </a>
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
       </header>
 
       {/* Desktop navbar */}
-      <header className="hidden md:flex justify-between p-6">
-        <a href="/" className="text-xl font-semibold">
+      <header className="hidden md:flex justify-between items-center bg-cream border-b-4 border-navy px-8 py-4 fixed top-0 left-0 w-full z-20">
+        <a
+          href="/"
+          className="text-2xl font-display font-bold text-navy bg-mustard border-4 border-navy px-4 py-2 rounded-[4px] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-brutal-sm transition-all duration-200 ease-out"
+        >
           Hakim Nazri
         </a>
-        <div className="flex space-x-5">
-          {NAV_ITEMS.map(({ href, label }) => (
-            <ul key={href}>
-              <a href={href} className="hover:underline">
-                <li>{label}</li>
-              </a>
-            </ul>
-          ))}
-        </div>
+        <nav>
+          <ul className="flex gap-6">
+            {NAV_ITEMS.map(({ href, label }) => (
+              <li key={href}>
+                <a
+                  href={href}
+                  className="font-display font-semibold text-navy text-lg border-4 border-transparent px-4 py-2 rounded-[4px] hover:border-navy hover:bg-white transition-all duration-200 ease-out"
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </header>
     </>
   );
